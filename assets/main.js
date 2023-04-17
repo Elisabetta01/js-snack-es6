@@ -108,3 +108,21 @@ console.log(nuovoArray)
 //creo array
 let array = ["ALberto", "Michele", "Angelo", "Simone", "Paolo", "Antonio"];
 
+//chiedo di inserire un numero
+let min = parseInt( prompt("inserisci un numero compreso fra 0 e 5"))
+let max = parseInt( prompt("inserisci un numero compreso fra 0 e 5"))
+
+//funzione e uso filter
+function myfunction(array, min, max){
+     let arrayFiltrato = array.filter((element, index)=>{
+          if(min < index && max > index){
+               return element
+          }
+     })
+
+     return arrayFiltrato
+}
+
+let newArray = myfunction(array, min, max)
+
+console.log(newArray)
