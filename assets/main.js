@@ -82,3 +82,23 @@ const squadre = [
 }
 ];
 
+//genero numeri random
+function numRandom(){
+     return Math.floor( Math.random()* 100 ) + 1
+}
+
+//sostituisco numeri random alle info 
+squadre.forEach(( element ) => {
+     element.puntiFatti = numRandom()
+     element.falliSubiti = numRandom()
+}) 
+
+console.log(squadre)
+
+//nuovo array con nome e falli subiti
+let nuovoArray = squadre.map(( element ) => {
+     const {nome, falliSubiti} = element
+     return {nome, falliSubiti}
+})
+
+console.log(nuovoArray)
