@@ -102,3 +102,9 @@ let nuovoArray = squadre.map(( element ) => {
 })
 
 console.log(nuovoArray)
+
+
+//snack 3:
+//creo array
+let array = ["ALberto", "Michele", "Angelo", "Simone", "Paolo", "Antonio"];
+
