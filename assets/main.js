@@ -56,3 +56,29 @@ const { nome, peso } = biciLeggera
 //stampo con template literal
 console.log(`La bici più leggera è ${nome} con un peso di ${peso} kg`)
 
+
+//snack 2:
+//creo array
+const squadre = [
+     {
+          nome: "Bianchi",
+          puntiFatti: 0,
+          falliSubiti: 0
+     },
+     {
+          nome: "Rossi",
+          puntiFatti: 0,
+          falliSubiti: 0
+     },
+     {
+          nome: "Verdi",
+          puntiFatti: 0,
+          falliSubiti: 0
+     },
+     {
+          nome: "Gialli",
+          puntiFatti: 0,
+          falliSubiti: 0
+}
+];
+
