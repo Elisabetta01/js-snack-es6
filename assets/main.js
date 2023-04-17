@@ -39,5 +39,20 @@ const bici = [
 
 console.log(bici)
 
+let biciLeggera = bici[0]
 
+//bici con peso minore
+bici.forEach(( element ) => {
+     if( element.peso < biciLeggera.peso ){
+          biciLeggera = element
+     }
+})
+
+console.log(biciLeggera)
+
+//destructuring
+const { nome, peso } = biciLeggera
+
+//stampo con template literal
+console.log(`La bici più leggera è ${nome} con un peso di ${peso} kg`)
 
